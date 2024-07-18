@@ -1,4 +1,3 @@
-import './style.css'  
 import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js';
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -53,7 +52,7 @@ createShape(new THREE.TorusKnotGeometry( 4, 1.25, 200, 32 ), materials[0], -10, 
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); 
 scene.add(ambientLight);
 
-const pointLight = new THREE.PointLight(0xffffff, 250);
+const pointLight = new THREE.PointLight(0xffffff, 0.5);
 pointLight.position.set(5, 5, 5);
 scene.add(pointLight);
 
